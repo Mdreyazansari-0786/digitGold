@@ -137,7 +137,9 @@ const Header = () => {
             src="/assets/finalcart.png"
             alt="cart"
           />
-          <span className="absolute w-6 top-2 left-3 text-sm flex items-center justify-center font-semibold text-white">0</span>
+          <span className="absolute w-6 top-2 left-3 text-sm flex items-center justify-center font-semibold text-white">
+            0
+          </span>
           <button className="text-xl font-medium cursor-pointer transition duration-300 ease-in-out transform hover:scale-110 bg-transparent hover:bg-yellow-500 text-white hover:text-black px-10 py-2 rounded-md ml-auto btn-get-started">
             Get Started
           </button>
