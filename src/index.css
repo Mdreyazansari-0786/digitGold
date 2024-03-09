@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .selected,
 .selected:hover {
-  color: #FFD700; /* This is the golden color */
+  color: #ffd700; /* This is the golden color */
   text-decoration: underline;
 }
 .img-white {
@@ -16,17 +15,14 @@
   filter: brightness(0) invert(1); /* Applies white color to PNG image with transparent background */
 }
 .btn-get-started {
-  border-radius: 0.375rem; 
+  border-radius: 0.375rem;
   outline: 2px solid white;
 }
 
 .btn-get-started:hover {
-  background-color: #fff; 
+  background-color: #fff;
   color: #000;
 }
-
-
-
 
 .image-container {
   display: flex;

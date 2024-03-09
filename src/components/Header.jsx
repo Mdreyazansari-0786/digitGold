@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
-
+import logo from "../assets/logo.png";
+import user from "../assets/user.png";
+import cart from "../assets/finalcart.png";
 const Header = () => {
   const [selectedItem, setSelectedItem] = useState("Home");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,7 +21,7 @@ const Header = () => {
     <div className="w-full h-20 bg-black px-4 py-2 md:py-4 font-titleFont relative">
       <div className="max-w-screen-xl h-full mx-auto flex items-center justify-between">
         <div>
-          <img className="w-28 ml-[-20px]" src="/assets/logo.png" alt="logo" />
+          <img className="w-28 ml-[-20px]" src={logo} alt="logo" />
         </div>
 
         {/* Hamburger Menu for Small Screens */}
@@ -74,7 +76,7 @@ const Header = () => {
             </li>
             <img
               className="w-10 flex items-center rounded-full gap-10"
-              src="/assets/user.png"
+              src={user}
               alt="user"
             />
           </ul>
@@ -134,7 +136,7 @@ const Header = () => {
         <div className="flex items-center gap-10 relative">
           <img
             className="w-10 flex items-center img-white"
-            src="/assets/finalcart.png"
+            src={cart}
             alt="cart"
           />
           <span className="absolute w-6 top-2 left-3 text-sm flex items-center justify-center font-semibold text-white">

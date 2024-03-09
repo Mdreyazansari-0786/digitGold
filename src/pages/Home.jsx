@@ -1,22 +1,24 @@
 import React from "react";
 import Banner from "../components/Banner";
+import InfiniteScrolling from "../components/InfiniteScrolling.jsx";
 import { FaGripLines } from "react-icons/fa";
+import { FaAngleDoubleRight } from "react-icons/fa";
+import afterslider from "../assets/afterslider.jpg";
+import certificate1 from "../assets/About-Us-1.png";
+import certificate2 from "../assets/Certificate.png";
+import certificate3 from "../assets/About-Us-2.png";
 
 const Home = () => {
   return (
     <div>
       <Banner />
       <div style={{ marginTop: "30px" }}>
-        <img src="assets/afterslider.jpg" alt="" />
+        <img src={afterslider} alt="afterslider" />
       </div>
       <div className="image-container">
-        <img src="assets/About-Us-1.png" alt="certificate" />
-        <img
-          src="assets/Certificate.png"
-          alt="certificate"
-          className="middle-image"
-        />
-        <img src="assets/About-Us-2.png" alt="certificate" />
+        <img src={certificate1} alt="certificate" />
+        <img src={certificate2} alt="certificate" className="middle-image" />
+        <img src={certificate3} alt="certificate" />
       </div>
 
       <div style={{ marginTop: "30px" }} className="px-40 align-baseline ">
@@ -73,6 +75,75 @@ const Home = () => {
           certificate that Value digit gold asset is $90. The Certificate of
           asset can resell for $60 if necessary.
         </p>
+      </div>
+      <div
+        style={{ marginTop: "30px", display: "flex" }}
+        className="px-40 gap-52"
+      >
+        <div>
+          <button
+            className="overflow-hidden bg-white text-yellow-500 border border-yellow-500 px-2 py-4 text-lg lg:text-xl transition duration-300 flex items-center justify-center hover:bg-yellow-400 hover:text-white hover:border-transparent hover:scale-105 hover:translate-x-[-10px] rounded-md"
+            style={{ borderRadius: "2rem" }}
+          >
+            <span className="flex items-center">Read More</span>
+            <span>
+              <FaAngleDoubleRight />
+            </span>
+          </button>
+        </div>
+
+        <div className="flex items-center relative">
+          <h1 className="text-[15px] lg:text-[20px] font-bold text-black mr-2">
+            May
+          </h1>
+          <h1 className="text-[15px] lg:text-[20px] font-bold text-black ">
+            2018
+          </h1>
+          <div className="bottom-4 left-full ml-44 h-full bg-black w-[1px]"></div>
+        </div>
+
+        <div className="flex items-center relative">
+          <h2 className="text-[15px] lg:text-[20px] font-bold text-black hover:text-yellow-500 hover:underline flex">
+            <span className="flex-none">
+              Established In New <br /> York, US
+            </span>
+          </h2>
+        </div>
+        <div className="flex items-center relative">
+          <h2 className="text-[15px] lg:text-[15px] font-bold text-black hover:text-yellow-500 hover:underline flex items-center">
+            <span className="flex-none">
+              Filled Under Title W.G.O.L.C USPTO <br />
+              <span className="text-gray-500"> Secret Name Of Wgoiglc</span>
+            </span>
+          </h2>
+        </div>
+      </div>
+      <div>
+        <img
+          src="assets/Resell-Banner.jpg"
+          alt=""
+          style={{
+            width: "100%",
+            paddingTop: "20px",
+          }}
+          onClick={() => {
+            alert("Open resell form");
+          }}
+        />
+      </div>
+      <div className="pt-14">
+        <h2 className="text-center text-[16px] leading-[26px]  font-bold text-yellow-500 hover:text-yellow-600 transition duration-300 mx-1">
+          <span className="inline-flex items-center">
+            <FaGripLines className="mr-2" />
+            OUR SHOP
+          </span>
+        </h2>
+        <h1 className="text-center text-[48px] font-bold leading-[60px] tracking-normal]">
+          Latest Products
+        </h1>
+      </div>
+      <div>
+        <InfiniteScrolling />
       </div>
     </div>
   );
