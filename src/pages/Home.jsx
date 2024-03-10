@@ -7,6 +7,7 @@ import afterslider from "../assets/afterslider.jpg";
 import certificate1 from "../assets/About-Us-1.png";
 import certificate2 from "../assets/Certificate.png";
 import certificate3 from "../assets/About-Us-2.png";
+import Card from "../components/Card.jsx";
 
 const Home = () => {
   return (
@@ -142,9 +143,17 @@ const Home = () => {
           Latest Products
         </h1>
       </div>
-      <div>
-        <InfiniteScrolling />
+
+      <InfiniteScrolling />
+      <div className="flex justify-center" style={{ marginTop: "-70px" }}>
+        <button
+          className="bg-black text-white border border-black px-4 py-3 text-lg lg:text-xl transition duration-300 transform hover:bg-yellow-400 hover:text-black hover:translate-x-3 rounded-md"
+          style={{ borderRadius: "32px" }}
+        >
+          <span className="flex items-center">Read More</span>
+        </button>
       </div>
+      <Card />
     </div>
   );
 };
