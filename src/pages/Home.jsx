@@ -8,6 +8,7 @@ import certificate1 from "../assets/About-Us-1.png";
 import certificate2 from "../assets/Certificate.png";
 import certificate3 from "../assets/About-Us-2.png";
 import Card from "../components/Card.jsx";
+import solution from "../assets/solution.jpg";
 
 const Home = () => {
   return (
@@ -154,6 +155,20 @@ const Home = () => {
         </button>
       </div>
       <Card />
+      <div className="flex justify-center px-64 mt-12 mb-8">
+        {/* Other content */}
+        <div className="flex-none">
+          <div className="relative">
+            <img
+              src={solution}
+              alt="Solution"
+              className="w-[1519px] h-[594px] "
+              style={{ marginTop: "30px" }}
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-[#1c1e22] bg-opacity-50 "></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
