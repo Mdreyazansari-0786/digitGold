@@ -9,6 +9,11 @@ import certificate2 from "../assets/Certificate.png";
 import certificate3 from "../assets/About-Us-2.png";
 import Card from "../components/Card.jsx";
 import solution from "../assets/solution.jpg";
+import arrowdown from "../assets/arrow2.png";
+import uparrow from "../assets/up arrow.png";
+import banner from "../assets/Big-Banner-2.jpg";
+import Testimonials from "../components/Testimonial.jsx";
+import Footer from "../components/Footer.jsx";
 
 const Home = () => {
   return (
@@ -165,10 +170,104 @@ const Home = () => {
               className="w-[1519px] h-[594px] "
               style={{ marginTop: "30px" }}
             />
-            <div className="absolute inset-0 flex items-center justify-center bg-[#1c1e22] bg-opacity-50 "></div>
+            <div className="absolute inset-0  items-center bg-[#1c1e22] bg-opacity-50 pl-[112px] pt-[120px]">
+              <p className="text-[#E7b53e] flex items-center">
+                <FaGripLines className="mr-2 text-[30px]" />
+                INNOVATIVE
+              </p>
+              <h1 className="text-[50px] leading-[70px] text-white tracking-normal justify-start text-bold ">
+                Digit Gold inc DTGI is working on <br /> Effective Products &
+                New <br />
+                Technology
+              </h1>
+              <button className="bg-[#E7b53e] hover:bg-white text-black font-bold px-[24px] py-[16px] rounded-full flex items-center text-[16px] leading-6 tracking-normal">
+                Buy Now <FaAngleDoubleRight className="ml-2" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="flex flex-col items-center justify-center">
+        <p class="text-[#E7b53e] flex text-[16px] gap-1">
+          <FaGripLines class=" text-[16px] mt-1" />
+          SIMPLE PROCESS
+        </p>
+        <h1 className="text-[48px] font-bold mt-8 leading-[26px] tracking-normal">
+          Customer Journey
+        </h1>
+      </div>
+
+      <div className="px-[180px] flex gap-5 mt-8">
+        <div className="items-center">
+          <div className="left-12 relative w-16 h-16 bg-white hover:bg-yellow-500 rounded-full flex justify-center items-center text-black text-xl font-bold border border-black transition duration-300 ease-in-out hover:border-black">
+            01
+          </div>
+          <div className="">
+            <p className="text-[20px] leading-6 font-bold gap-3">
+              Add Asset To Cart
+            </p>
+            <span className="flex items-center gap-12">
+              In the website select the assets with <br /> specific colors,
+              value etc.
+              <img className="" src={arrowdown} alt="arrow" />
+            </span>
+          </div>
+        </div>
+        <div className="items-center">
+          <div className=" left-12 relative w-16 h-16 bg-white hover:bg-yellow-500 rounded-full flex justify-center items-center text-black text-xl font-bold border border-black transition duration-300 ease-in-out hover:border-black">
+            02
+          </div>
+          <div className="">
+            <p className="text-[20px] leading-6 font-bold">
+              Procedure To Checkout
+            </p>
+            <span className="flex items-center gap-12">
+              You can make an order with easy step <br /> online.
+              <img className="" src={uparrow} alt="arrow" />
+            </span>
+          </div>
+        </div>
+        <div className=" items-center">
+          <div className="left-12 relative w-16 h-16 bg-white hover:bg-yellow-500 rounded-full flex justify-center items-center text-black text-xl font-bold border border-black transition duration-300 ease-in-out hover:border-black">
+            03
+          </div>
+          <div className="">
+            <p className="text-[20px] leading-6 font-bold">Make A Purchase</p>
+            <span className="flex items-center gap-12">
+              Payment is made online & unique digit <br /> code is allocated.
+              <img className="" src={arrowdown} alt="arrow" />
+            </span>
+          </div>
+        </div>
+        <div className="items-center">
+          <div className=" left-12 relative w-16 h-16 bg-white hover:bg-yellow-500 rounded-full flex justify-center items-center text-black text-xl font-bold border border-black transition duration-300 ease-in-out hover:border-black">
+            04
+          </div>
+          <div className="">
+            <p className="text-[20px] leading-6 font-bold">Return Any Time</p>
+            <span className="flex items-center gap-12">
+              You can return digit code without <br /> returning the digit gold.
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className=" mt-14 w-full">
+        <img src={banner} alt="banner" />
+      </div>
+      <div class="flex flex-col items-center justify-center mt-11">
+        <p class="text-[#E7b53e] flex text-[24px] gap-1">
+          <FaGripLines class=" text-[24px] mt-1" />
+          TESTIMONIALS
+        </p>
+        <h1 className="text-[48px] font-bold mt-8 leading-[26px] tracking-normal">
+          What Our Clients Say ?
+        </h1>
+      </div>
+      <div>
+        <Testimonials />
+      </div>
+      <Footer />
     </div>
   );
 };
