@@ -86,7 +86,7 @@ const InfiniteScrolling = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % totalSlides);
-    });
+    }, 5000);
     return () => clearInterval(interval);
   }, [totalSlides]);
 
