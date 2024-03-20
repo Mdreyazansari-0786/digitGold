@@ -1,127 +1,125 @@
 import React from "react";
+import logo from "../assets/logo.png";
+import { FaLocationArrow, FaPhone } from "react-icons/fa6";
+import { FaAngleDoubleRight, FaYoutube, FaFacebook } from "react-icons/fa";
+import { RxInstagramLogo } from "react-icons/rx";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900">
-      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-        <div className="lg:flex lg:items-start lg:gap-8">
-          <img
-            src="https://www.codewithfaraz.com/InstaPic.png"
-            className="mr-3 h-10 w-auto"
-            alt="CodewithFaraz Footer Logo"
-          />
-
-          <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
-            <div className="col-span-2">
-              <div>
-                <h2 className="text-2xl font-bold text-white">
-                  Get the latest news!
-                </h2>
-                <p className="mt-4 text-gray-400">
-                  Don't be shy. Say hi 👋. Do you have a project or an idea that
-                  could use some help? Let's work together.
-                </p>
-              </div>
+    <footer className="bg-black text-white">
+      <div className="mx-6 py-10 text-center md:text-left">
+        <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <h6 className="mb-4 flex items-center justify-center md:justify-start font-semibold uppercase">
+              <img className="w-[257px] h-[180px]" src={logo} alt="logo" />
+            </h6>
+            <p>
+              Digit Gold is a product with unique users Digit Codes can be
+              placed in a wall frame.
+            </p>
+            <ul class="text-white text-[30px] flex gap-2 mt-5 pl-12">
+              <li class="text-black transition-colors duration-300 hover:text-red-600">
+                <FaYoutube />
+              </li>
+              <li class="transition-colors duration-300 hover:text-blue-600">
+                <FaFacebook />
+              </li>
+              <li class="transition-colors duration-300 hover:text-red-600">
+                <RxInstagramLogo />
+              </li>
+            </ul>
+          </div>
+          <div class="flex items-center">
+            <div>
+              <h6 class="mb-4 font-bold uppercase text-2xl leading-6 tracking-normal">
+                Quick Links
+              </h6>
+              <ul className="text-base leading-6 tracking-normal">
+                <li className="flex gap-2 mt-2 transition duration-300 hover:text-yellow-500 group">
+                  <FaAngleDoubleRight className="w-4 h-4 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  Home
+                </li>
+                <li className="flex gap-2 mt-2 transition duration-300 hover:text-yellow-500 group">
+                  <FaAngleDoubleRight className="w-4 h-4 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  About DTG
+                </li>
+                <li className="flex gap-2 mt-2 transition duration-300 hover:text-yellow-500 group">
+                  <FaAngleDoubleRight className="w-4 h-4 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  Shop
+                </li>
+                <li className="flex gap-2 mt-2 transition duration-300 hover:text-yellow-500 group">
+                  <FaAngleDoubleRight className="w-4 h-4 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  Products
+                </li>
+                <li className="flex gap-2 mt-2 transition duration-300 hover:text-yellow-500 group">
+                  <FaAngleDoubleRight className="w-4 h-4 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  Contacts
+                </li>
+                <li className="flex gap-2 mt-2 transition duration-300 hover:text-yellow-500 group">
+                  <FaAngleDoubleRight className="w-4 h-4 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  My Account
+                </li>
+              </ul>
             </div>
+            <div class="border-[1px] border-solid border-gray-600 h-[73%] ml-8"></div>
+          </div>
 
-            <div className="col-span-2 lg:col-span-3 lg:flex lg:items-end">
-              <form className="w-full">
-                <div className="relative max-w-lg">
-                  <label htmlFor="email" className="sr-only">
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="user@codewithfaraz.com"
-                    className="w-full rounded-full border-gray-200 outline-none bg-gray-100 p-4 pe-32 text-sm font-medium"
-                  />
-                  <button
-                    type="submit"
-                    id="subsbtn"
-                    className="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
-                  >
-                    Subscribe
-                  </button>
-                </div>
-              </form>
-            </div>
-
-            <div className="col-span-2 sm:col-span-1">
-              <p className="relative font-medium text-white">Quick Links</p>
-              <ul className="mt-6 space-y-4 text-sm">
-                <li>
-                  <a
-                    href="https://www.codewithfaraz.com"
-                    className="transition hover:opacity-75 text-gray-200"
-                  >
-                    Home
-                  </a>
+          <div class="flex mt-8">
+            <div>
+              <h6 class="mb-4 flex justify-center md:justify-start font-bold uppercase text-2xl leading-6 tracking-normal">
+                Contact details
+              </h6>
+              <ul class="flex flex-col gap-4">
+                <li class="flex items-center">
+                  <span class="text-yellow-500 rounded-full p-2 mr-2 border border-gray-500">
+                    <FaPhone />
+                  </span>
+                  <span>+1 (929) 451-7507</span>
                 </li>
-                <li>
-                  <a
-                    href="https://www.codewithfaraz.com/about-us"
-                    className="transition hover:opacity-75 text-gray-200"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.codewithfaraz.com/blog"
-                    className="transition hover:opacity-75 text-gray-200"
-                  >
-                    Blogs
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.codewithfaraz.com/contact"
-                    className="transition hover:opacity-75 text-gray-200"
-                  >
-                    Contact Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href=""
-                    className="transition hover:opacity-75 text-gray-200"
-                  >
-                    Write For Us
-                  </a>
+                <li class="flex items-center">
+                  <span class=" text-yellow-500 rounded-full p-2 mr-2 border border-gray-500 ">
+                    <MdEmail />
+                  </span>
+                  <span>andrewsamdigitgold@gmail.com</span>
                 </li>
               </ul>
             </div>
 
-            {/* Additional lists */}
+            <div class="border-[1px] border-solid border-gray-600 h-[80%] ml-8"></div>
           </div>
-        </div>
 
-        <div className="mt-8 border-t pt-8 border-gray-800">
-          <div className="sm:flex sm:justify-between">
-            <p className="text-xs text-gray-400">
-              © 2024. DigiGold All rights reserved.
-            </p>
-            <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
+          <div className="mt-8">
+            <h6 className="mb-4 flex justify-center md:justify-start font-bold uppercase text-[25px] leading-6 tracking-normal">
+              Subscribe
+            </h6>
+            <ul className="text-[]">
               <li>
-                <a
-                  href="https://www.codewithfaraz.com/terms-and-conditions"
-                  className="transition hover:opacity-75 text-gray-400"
-                >
-                  Terms & Conditions
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.codewithfaraz.com/privacy-policy"
-                  className="transition hover:opacity-75 text-gray-400"
-                >
-                  Privacy Policy
-                </a>
+                Join Us To Get Latest Updates.
+                <div className="flex items-center mt-2">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="text-black px-4 py-4 border border-gray-300 rounded-l-md focus:outline-none focus:ring focus:border-yellow-300"
+                  />
+                  <button className="bg-yellow-500 text-white px-[20px] py-[20px] rounded-r-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-500">
+                    <FaLocationArrow className="text-[19px]" />
+                  </button>
+                </div>
               </li>
             </ul>
           </div>
         </div>
+      </div>
+      <div className="border-b-2 border-gray-600 p-6"></div>
+      <div className="bg-black/5 p-6 text-center ">
+        <span>© 2024 DigitGold:</span>
+        <a
+          className="font-semibold hover:text-yellow-500"
+          href="https://tw-elements.com/"
+        >
+          All Rights Reserved.
+        </a>
       </div>
     </footer>
   );

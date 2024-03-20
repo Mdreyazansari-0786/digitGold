@@ -14,6 +14,7 @@ import uparrow from "../assets/up arrow.png";
 import banner from "../assets/Big-Banner-2.jpg";
 import Testimonials from "../components/Testimonial.jsx";
 import Footer from "../components/Footer.jsx";
+import Contactusbanner from "../components/Contactusbanner.jsx";
 
 const Home = () => {
   return (
@@ -266,6 +267,9 @@ const Home = () => {
       </div>
       <div>
         <Testimonials />
+      </div>
+      <div>
+        <Contactusbanner />
       </div>
       <Footer />
     </div>

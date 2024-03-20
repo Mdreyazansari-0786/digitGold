@@ -59,7 +59,7 @@ const Testimonials = () => {
   return (
     <div className="container my-20 mx-auto md:px-4">
       <section className="text-center">
-        <div className="grid gap-x-4 md:grid-cols-3 lg:gap-x-8">
+        <div className="grid gap-x-2 md:grid-cols-3 lg:gap-x-4">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} {...testimonial} />
           ))}
