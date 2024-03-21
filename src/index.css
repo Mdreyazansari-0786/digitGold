@@ -1,3 +1,15 @@
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
