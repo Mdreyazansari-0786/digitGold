@@ -15,6 +15,7 @@ import banner from "../assets/Big-Banner-2.jpg";
 import Testimonials from "../components/Testimonial.jsx";
 import Footer from "../components/Footer.jsx";
 import Contactusbanner from "../components/Contactusbanner.jsx";
+import Appiscomingsoon from "../components/Appiscomingsoon.jsx";
 
 const Home = () => {
   return (
@@ -90,13 +91,14 @@ const Home = () => {
       >
         <div>
           <button
-            className="overflow-hidden bg-white text-yellow-500 border border-yellow-500 px-2 py-4 text-lg lg:text-xl transition duration-300 flex items-center justify-center hover:bg-yellow-400 hover:text-white hover:border-transparent hover:scale-105 hover:translate-x-[-10px] rounded-md"
-            style={{ borderRadius: "2rem" }}
+            className="overflow-hidden bg-white text-yellow-500 border py-4 px-4 border-yellow-500 text-lg lg:text-xl transition duration-300 flex items-center justify-center hover:bg-yellow-400 hover:text-white hover:border-transparent hover:scale-105 hover:translate-x-[-10px] rounded-md"
+            style={{
+              borderRadius: "2rem",
+              minWidth: "110px",
+              whiteSpace: "nowrap",
+            }}
           >
-            <span className="flex items-center">Read More</span>
-            <span>
-              <FaAngleDoubleRight />
-            </span>
+            Read More
           </button>
         </div>
 
@@ -270,6 +272,9 @@ const Home = () => {
       </div>
       <div>
         <Contactusbanner />
+      </div>
+      <div>
+        <Appiscomingsoon />
       </div>
       <Footer />
     </div>
