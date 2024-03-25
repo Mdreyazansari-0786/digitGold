@@ -23,11 +23,7 @@ const Appiscomingsoon = () => {
       <div className="relative">
         <img className="w-[1519px] h-[717px]" src={waterbg} alt="" />
         <div className="absolute inset-0 flex justify-center items-center mb-32">
-          <img
-            className="mr-2 w-[612px] h-[410px] sm:w-[240px] sm:h-[130px]"
-            src={bitcoin}
-            alt=""
-          />
+          <img className="mr-2 w-[612px] h-[410px] " src={bitcoin} alt="" />
           <img className="ml-2 w-[612px] h-[410px] " src={flag} alt="" />
         </div>
         <div className="absolute bottom-0 left-0 right-0 text-center">
