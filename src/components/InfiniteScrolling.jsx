@@ -138,13 +138,13 @@ const InfiniteScrolling = () => {
             </div>
           ))}
         </div>
-        <div className="absolute left-[265px] right-[285px] flex justify-between items-center bottom-[320px]">
+        <div className="absolute inset-x-0 bottom-[350px]  flex justify-between items-center md:left-[265px] md:right-[285px]">
           <div
             onClick={previousSlide}
-            className="hover:text-yellow-500 cursor-pointer icon-container"
+            className="hover:text-yellow-500 cursor-pointer icon-container "
           >
             <FaChevronLeft
-              className="circle-chevron-left icon"
+              className="circle-chevron-left icon "
               color="black"
               size={32}
             />
