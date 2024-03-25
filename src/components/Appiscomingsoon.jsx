@@ -8,19 +8,27 @@ const Appiscomingsoon = () => {
   return (
     <div>
       <div className="bg-black h-24 "></div>
-      <div className="h-52 bg-yellow-500 text-black px-4 flex justify-center items-center">
-        <h2 className="text-[50px] leading-[66px] tracking-normal text-center">
+      <div className="h-36 sm:h-52 bg-yellow-500 text-black px-4 flex justify-center items-center">
+        <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[1.5rem] sm:leading-[66px] tracking-normal text-center">
           DTGI is a new Technology will be in Every Household, not in the Too
           Long Distance Future.
         </h2>
       </div>
-      <img className="w-[1519px] h-[501px]" src={appiscoming} alt="" />
+      <img
+        className="w-[1519px] h-[550px]  sm:max-w-[900px] sm:max-h-[280px] md:max-w-[700px] md:max-h-[500px] lg:max-w-full "
+        src={appiscoming}
+        alt=""
+      />
 
       <div className="relative">
         <img className="w-[1519px] h-[717px]" src={waterbg} alt="" />
         <div className="absolute inset-0 flex justify-center items-center mb-32">
-          <img className="mr-2 w-[612px] h-[410px]" src={bitcoin} alt="" />
-          <img className="ml-2 w-[612px] h-[410px]" src={flag} alt="" />
+          <img
+            className="mr-2 w-[612px] h-[410px] sm:w-[240px] sm:h-[130px]"
+            src={bitcoin}
+            alt=""
+          />
+          <img className="ml-2 w-[612px] h-[410px] " src={flag} alt="" />
         </div>
         <div className="absolute bottom-0 left-0 right-0 text-center">
           <p className="text-[16px] leading-6 tracking-normal text-white  mx-auto max-w-[1255px] mb-7 ">
