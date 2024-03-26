@@ -5,7 +5,7 @@ import { MdOutlineClose } from "react-icons/md";
 import logo from "../assets/logo.png";
 import user from "../assets/user.png";
 import cart from "../assets/finalcart.png";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   const [selectedItem, setSelectedItem] = useState("Home");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,6 +20,14 @@ const Header = () => {
   };
 
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
+  const MenuItemLink = ({ to, itemName }) => {
+    return (
+      <li>
+        <Link to={to}>{itemName}</Link>
+      </li>
+    );
+  };
 
   return (
     <div className="w-full bg-black py-2 md:py-4 font-titleFont sticky top-0 z-50">
@@ -40,36 +48,12 @@ const Header = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex flex-grow justify-center">
           <ul className="flex items-center gap-8 text-white">
-            <MenuItem
-              itemName="Home"
-              handleItemClick={handleItemClick}
-              selectedItem={selectedItem}
-            />
-            <MenuItem
-              itemName="About DTG"
-              handleItemClick={handleItemClick}
-              selectedItem={selectedItem}
-            />
-            <MenuItem
-              itemName="Shop"
-              handleItemClick={handleItemClick}
-              selectedItem={selectedItem}
-            />
-            <MenuItem
-              itemName="Product"
-              handleItemClick={handleItemClick}
-              selectedItem={selectedItem}
-            />
-            <MenuItem
-              itemName="Resell"
-              handleItemClick={handleItemClick}
-              selectedItem={selectedItem}
-            />
-            <MenuItem
-              itemName="Account"
-              handleItemClick={handleItemClick}
-              selectedItem={selectedItem}
-            />
+            <MenuItemLink to="/" itemName="Home" />
+            <MenuItemLink to="/about" itemName="About DTG" />
+            <MenuItemLink to="/shop" itemName="Shop" />
+            <MenuItemLink to="/product" itemName="Product" />
+            <MenuItemLink to="/resell" itemName="Resell" />
+            <MenuItemLink to="/account" itemName="Account" />
           </ul>
           <img
             className="w-10 border rounded-full  ml-4"

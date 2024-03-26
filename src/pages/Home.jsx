@@ -13,7 +13,7 @@ import arrowdown from "../assets/arrow2.png";
 import uparrow from "../assets/up arrow.png";
 import banner from "../assets/Big-Banner-2.jpg";
 import Testimonials from "../components/Testimonial.jsx";
-import Footer from "../components/Footer.jsx";
+
 import Contactusbanner from "../components/Contactusbanner.jsx";
 import Appiscomingsoon from "../components/Appiscomingsoon.jsx";
 
@@ -277,7 +277,6 @@ const Home = () => {
       <div>
         <Appiscomingsoon />
       </div>
-      <Footer />
     </div>
   );
 };

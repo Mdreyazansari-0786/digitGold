@@ -91,7 +91,7 @@ const Footer = () => {
                 className="text-black px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring focus:border-yellow-300"
               />
               <button className="bg-yellow-500 text-white px-4 py-2 rounded-r-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-500">
-                <FaLocationArrow className="text-xl" />
+                <FaLocationArrow className="text-[25px] leading[31px]" />
               </button>
             </div>
           </div>
